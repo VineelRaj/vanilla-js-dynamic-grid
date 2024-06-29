@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./table.css"/>
+        <script type="text/javascript" src="./table.js"></script>
+    </head>
+    <body>
+        <label for="search">
+            Search
+        </label>
+        <input id="search" type="text">
+        <table id="countryTable">
+            <tr>
+                <th id="name">Name</th>
+                <th id="area">Area</th>
+                <th id="population">Population</th>
+                <th id="statOfWeek">Start Of Week</th>
+                <th id="region">Region</th>
+            </tr>
+        </table>
+        <button id="prev">Previous</button>
+        <div>0</div>
+        <button id="next">Next</button>
+    </body>
+    <script>
+        var pageCount = 0
+        const prev = document.getElementById('prev')
+        console.log(prev)
+        prev.addEventListener('click', getData(pageCount++));
+        const next = document.getElementById('next')
+        next.addEventListener('click', getData(pageCount--));
+    </script>
+</html>
