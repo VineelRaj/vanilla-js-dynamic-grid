@@ -25,9 +25,13 @@ async function getData(pageCount){
 
 }
 function main(){
-    let pageCount = 1;
+    let pageCount = 0;
     getData(pageCount);
-    
+    const prev = document.getElementById('prev')
+    console.log(prev)
+    prev.addEventListener('click', getData(pageCount++));
+    const next = document.getElementById('next')
+    next.addEventListener('click', getData(pageCount--));
     // const search = document.getElementById('search')
     // search.addEventListener('change', (e)=>filterData(e.targetValue))
     // const columns = document.getElementsByTagName("th")
