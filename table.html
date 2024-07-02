@@ -18,16 +18,10 @@
                 <th id="region">Region</th>
             </tr>
         </table>
-        <button id="prev">Previous</button>
-        <div>0</div>
-        <button id="next">Next</button>
+        <div class="pageControls">
+            <button id="prev">Previous</button>
+            <div id="pager">0</div>
+            <button id="next">Next</button>
+        </div>  
     </body>
-    <script>
-        var pageCount = 0
-        const prev = document.getElementById('prev')
-        console.log(prev)
-        prev.addEventListener('click', getData(pageCount++));
-        const next = document.getElementById('next')
-        next.addEventListener('click', getData(pageCount--));
-    </script>
 </html>

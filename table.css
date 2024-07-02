@@ -1,10 +1,20 @@
-/* #table{
+table{
     width:50%;
-} */
+    margin-top: 5%;
+}
 
 table, tr, th, td{
     border: 1px solid black; 
     text-align: center;
     border-collapse: collapse;
 }
-
+td{
+    width: 10%
+}
+.pageControls{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3%;
+}
